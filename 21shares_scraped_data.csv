@@ -1,0 +1,4 @@
+Issuer,Product_Name,Ticker,ISIN,AUM_USD,AUM_Date,NAV_per_Unit,Inception_Date,Fee,Scrape_Date
+21Shares,21shares Pendle ETP,APEN,CH1495416997,292.422.05,2025-11-17,14.62,"Oct 22, 2025",%,2025-11-17
+21Shares,21shares dYdX ETP,DYDX,CH1454621793,98.480.28,2025-11-17,9.85,"Sep 10, 2025",%,2025-11-17
+21Shares,21shares Artificial Superintelligence Alliance ETP,AFET,CH1480821375,131.391.15,2025-11-17,8.76,"Sep 16, 2025",%,2025-11-17
