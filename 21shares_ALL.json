@@ -1,0 +1,96 @@
+{
+  "_id": "bitcoin_fund",
+  "startUrl": ["https://www.21shares.com/en-row/product/afet",
+    "https://www.21shares.com/en-row/product/dydx",
+    "https://www.21shares.com/en-row/product/apen"],
+  "selectors": [ {
+      "id": "product_name",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "_root"
+      ],
+      "selector": "body > div.main-wrapper > section.section.product-hero-rebrand > div > div.product-hero-top > div > div",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "ticker",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "_root"
+      ],
+      "selector": "#w-node-ae1a2edb-52b2-5124-64a1-534f233009d4-7d6687af > div.product-information-box > div > div:nth-child(1) > div:nth-child(2) > div.flex-horizontal.gap-0-5-rem.relative > div.text-to-copy",
+      "multiple": false,
+      "regex": "([A-Z.]+)"
+    },
+     {
+      "id": "isin",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "_root"
+      ],
+      "selector": "#w-node-ae1a2edb-52b2-5124-64a1-534f233009d4-7d6687af > div.product-information-box > div > div:nth-child(1) > div:nth-child(5) > div.flex-horizontal.gap-0-5-rem.relative > div.text-to-copy",
+      "multiple": false,
+      "regex": "([A-Z]{2}[A-Z0-9]{9}[0-9])"
+    },
+      {
+      "id": "aum_usd",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "_root"
+      ],
+      "selector": "body > div.main-wrapper > section:nth-child(6) > div > div > div:nth-child(1) > div.product-information-box > div:nth-child(9) > div.flex-horizontal.sans-body-copy-2b > div:nth-child(2)",
+      "multiple": false,
+      "regex": "([0-9,]+\\.?[0-9]*)"
+    },
+     {
+      "id": "aum_date",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "_root"
+      ],
+      "selector": "body > div.main-wrapper > section:nth-child(6) > div > div > div:nth-child(1) > div.product-information-box > div:nth-child(4) > div.sans-body-copy-2b",
+      "multiple": false,
+      "regex": ""
+    },
+      {
+      "id": "navpu_usd",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "_root"
+      ],
+      "selector": "body > div.main-wrapper > section:nth-child(6) > div > div > div:nth-child(1) > div.product-information-box > div:nth-child(11) > div.flex-horizontal.sans-body-copy-2b > div:nth-child(2)",
+      "multiple": false,
+      "regex": "([0-9,]+\\.?[0-9]*)"
+    },
+     {
+      "id": "management_fee",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "_root"
+      ],
+      "selector": "body > div.main-wrapper > section:nth-child(6) > div > div > div:nth-child(1) > div.product-information-box > div:nth-child(14) > div.flex-horizontal > div:nth-child(2)",
+      "multiple": false,
+      "regex": "([0-9.]+%)"
+    },
+    {
+      "id": "cusip",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "_root"
+      ],
+      "selector": "",
+      "multiple": false,
+      "regex": "([A-Z0-9]+)"
+    },
+    {
+      "id": "custody_services",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "_root"
+      ],
+      "selector": "",
+      "multiple": false,
+      "regex": ""
+    }]
+}

@@ -1,0 +1,94 @@
+{
+  "_id": "bitcoin_fund",
+  "startUrl": ["https://www.3iq.io/our-funds/the-bitcoin-fund", "https://www.3iq.io/our-funds/bitcoin-etf"],
+  "selectors": [ {
+      "id": "product_name",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "_root"
+      ],
+      "selector": "h1",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "ticker",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "_root"
+      ],
+      "selector": "#live-feeds > div.live_feed_contain.u-container > div > div.live_feed_2col_wrap.u-grid-autofill > div:nth-child(2) > div.funds_card_top.u-vflex-stretch-top > div.funds_card_eyebrow > div.funds_tag_list.u-hflex-left-top > div > div",
+      "multiple": false,
+      "regex": "([A-Z.]+)"
+    },
+     {
+      "id": "isin",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "_root"
+      ],
+      "selector": "#fund-information > div.table_layout.u-grid-tablet > div.table_wrap.u-column-7.w-dyn-list > div > div > table > tbody > tr:nth-child(8) > td > p",
+      "multiple": false,
+      "regex": "([A-Z]{2}[A-Z0-9]{9}[0-9])"
+    },
+      {
+      "id": "nav_usd",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "_root"
+      ],
+      "selector": "#daily-nav-data > div.table_wrap > table > tbody > tr:nth-child(1) > td:nth-child(4) > p",
+      "multiple": false,
+      "regex": "([0-9,]+\\.?[0-9]*)"
+    },
+     {
+      "id": "nav_date",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "_root"
+      ],
+      "selector": "#daily-nav-data > div.table_wrap > table > tbody > tr:nth-child(1) > td:nth-child(2) > p",
+      "multiple": false,
+      "regex": ""
+    },
+      {
+      "id": "navpu_usd",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "_root"
+      ],
+      "selector": "#daily-nav-data > div.table_wrap > table > tbody > tr:nth-child(2) > td:nth-child(4) > p",
+      "multiple": false,
+      "regex": "([0-9,]+\\.?[0-9]*)"
+    },
+     {
+      "id": "management_fee",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "_root"
+      ],
+      "selector": "#fund-information > div.table_layout.u-grid-tablet > div.table_wrap.u-column-7.w-dyn-list > div > div > table > tbody > tr:nth-child(11) > td > p",
+      "multiple": false,
+      "regex": "([0-9.]+%)"
+    },
+    {
+      "id": "cusip",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "_root"
+      ],
+      "selector": "#fund-information > div.table_layout.u-grid-tablet > div.table_wrap.u-column-7.w-dyn-list > div > div > table > tbody > tr:nth-child(7) > td > p",
+      "multiple": false,
+      "regex": "([A-Z0-9]+)"
+    },
+    {
+      "id": "custody_services",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "_root"
+      ],
+      "selector": "#fund-information > div.table_layout.u-grid-tablet > div.table_wrap.u-column-7.w-dyn-list > div > div > table > tbody > tr:nth-child(14) > td > p",
+      "multiple": false,
+      "regex": ""
+    }]
+}
